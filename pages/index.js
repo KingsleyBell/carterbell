@@ -1,9 +1,11 @@
+import Link from 'next/link';
 import Head from 'next/head';
+import Layout from '../components/layout';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Layout>
       <Head>
         <title>CARTERBELL</title>
         <link rel="icon" href="/favicon.png" />
@@ -12,6 +14,10 @@ export default function Home() {
       <main>
         <h1 className={styles.title}>
           CARTERBELL
+        </h1>
+
+        <h1 className={styles.title}>
+          Read <Link href="/projects/first_project">this page!</Link>
         </h1>
 
         <p className={styles.description}>
@@ -126,6 +132,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </Layout>
   );
 }
