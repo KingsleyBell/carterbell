@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import Clock from 'react-live-clock';
 import Layout from '../components/layout';
 import styles from '../styles/Home.module.css';
 
@@ -7,68 +8,43 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>CARTERBELL</title>
-        <link rel="icon" href="/favicon.png" />
+        <title>CARTER BELL</title>
+        <link rel="icon" href="/favicon.png"/>
+        <link rel="stylesheet" href="https://use.typekit.net/rze2enu.css"/>
       </Head>
 
       <main>
-        <h1 className={styles.title}>
-          CARTERBELL
-        </h1>
-
-        <h1 className={styles.title}>
-          Read <Link href="/projects/first_project">this page!</Link>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+        <p className={styles.title}>
+          <img src="/cb_logo.png" alt="Vercel" className={styles.logo}/>
+          <br></br>
+          CARTER BELL
         </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
+        <div>
+          CMB STUDIO  LTD
+        </div>
+        <div>
+          <a
+            href="mailto: projects@carterbell.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            PROJECTS@CARTERBELL.COM
+          </a>
+        </div>
+        <div>
+          LONDON {' '}
+          <Clock
+            format={'HH:mm:ss'}
+            ticking={true}/>
+        </div>
       </footer>
 
       <style jsx>{`
         main {
-          padding: 5rem 0;
+          padding: 30vh 0;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -78,9 +54,8 @@ export default function Home() {
         footer {
           width: 100%;
           height: 100px;
-          border-top: 1px solid #eaeaea;
           display: flex;
-          justify-content: center;
+          justify-content: space-around;
           align-items: center;
         }
         footer img {
@@ -98,15 +73,6 @@ export default function Home() {
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
-          font-family:
-            Menlo,
-            Monaco,
-            Lucida Console,
-            Liberation Mono,
-            DejaVu Sans Mono,
-            Bitstream Vera Sans Mono,
-            Courier New,
-            monospace;
         }
       `}</style>
 
@@ -115,18 +81,8 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
-            sans-serif;
+          font-family: "athelas", serif;
+          font-weight: 400;
         }
         * {
           box-sizing: border-box;
