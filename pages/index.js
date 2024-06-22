@@ -34,7 +34,7 @@ export default function Home() {
             PROJECTS@CARTERBELL.COM
           </a>
         </div>
-        <div class={styles.clockContainer}>
+        <div class={styles.clockk}>
           LONDON {' '}
           <div className={styles.clock}>
             <Clock
