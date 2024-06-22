@@ -38,13 +38,14 @@ export default function Home() {
           LONDON {' '}
           <Clock
             format={'HH:mm:ss'}
+            style={{fontSize: '1.2em'}}
             ticking={true}/>
         </div>
       </footer>
 
       <style jsx>{`
         main {
-          padding: 30vh 0;
+          padding: 35vh 0;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -73,6 +74,22 @@ export default function Home() {
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
+        }
+        
+        @media (max-width: 600px) {
+            main {
+              padding: 32vh 0;
+            }
+            footer {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              align-items: center;
+              font-size: 0.9rem;
+              gap: 5px;
+              height: auto;
+            }
         }
       `}</style>
 
