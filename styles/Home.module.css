@@ -85,6 +85,16 @@
   height: 2em;
 }
 
+.clockContainer {
+  display: flex;
+}
+
+.clock {
+  min-width: 60px;
+  padding-left: 5px;
+  marging-top: -5px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

@@ -34,12 +34,15 @@ export default function Home() {
             PROJECTS@CARTERBELL.COM
           </a>
         </div>
-        <div>
+        <div class={styles.clockContainer}>
           LONDON {' '}
-          <Clock
-            format={'HH:mm:ss'}
-            style={{fontSize: '1.2em'}}
-            ticking={true}/>
+          <div className={styles.clock}>
+            <Clock
+              format={'HH:mm:ss'}
+              style={{fontSize: '1.2em', minWidth: '60px'}}
+              timezone={'Europe/London'}
+              ticking={true}/>
+          </div>
         </div>
       </footer>
 
